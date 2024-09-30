@@ -1,0 +1,96 @@
+</html>
+<head>
+    <title>Document</title>
+    <style>
+        input,select,button{
+            padding: 10px;
+            
+        }
+        td{
+            padding: 5px;
+        }
+        #formpage{
+            background-color: wheat;
+            border-radius: 10px;
+            box-shadow: 5px 10px lemonchiffon;
+        }
+        button{
+            color: black;
+            background-color: lime;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formpage">
+
+        <fieldset>
+            <legend><h1>Students Registeration Form</h1></legend>
+            
+            <form action="registered/" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name </label>
+                        </td>
+                        <td>
+                            <input type="text" required="required" id="name"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="phone">Students ID </label>
+                        </td>
+                        <td>
+                            <input type="tel" required="required" id="phone"/>
+                        </td>    
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Class">Class </label>
+                        </td>
+                        <td>
+                            <input type="number" required="required" id="Class">
+                        </td>
+                    </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>
+                <textarea id="address" cols="30" rows="10"></textarea>
+            </td>    
+        </tr>
+        <tr>
+            <td>
+                <label for="states">Gender</label>
+            </td>
+            <td>
+                
+                <select  id="Gender">
+                    <option value="male">Male</option>
+                    
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <button type="submit">Register</button>
+            </td>
+        </tr>
+
+    </table>
+    
+    <br/>
+</form>
+</fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,label,a,button{
+            padding: 10px;
+            margin: 7px;
+        }
+        fieldset{
+            background-color: rgb(104, 136, 136);
+            border-radius: 10px;
+            box-shadow: 5px 5px lime;
+        }
+        button{
+            color: black;
+            background-color: lime;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Students Login</h1></legend>
+    
+        <form action="registered/" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name </label> 
+                </td>
+                <td>
+                    <input type="text" required="required" id="name"/>
+                </td>
+    
+            </tr>
+            <tr>
+                <td>
+                    <label for="ID">Students ID </label>
+                </td>
+                    <td>
+                        <input type="number" required="required" id="ID">
+                    </td>    
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <button type="submit">LOGIN</button>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>Not Created Click Here</td>
+                <td><a href="formpage">Create Now</a></td>
+            </tr>
+        </table>
+    
+            <br/>
+        </form>
+    </fieldset>
+</body>
+</html>

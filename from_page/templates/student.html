@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="savestudent">
+        {%csrf_token%}
+        {{f.as_p}}
+        <input type="submit" >
+    </form>
+</body>
+</html>

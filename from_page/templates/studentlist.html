@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="">
+        {%csrf_token%}
+        {%for student in f%}
+        {{student.Student_ID}}
+        {{student.first_name}}
+        {{student.last_name}}
+        {{student.age}}
+        {{student.phone_no}}
+        {{student.email_id}}
+        <a href="/editstudent/{{student.id}}">EDIT</a>
+        <br>
+        {%endfor%}
+    </form>
+</body>
+</html>
