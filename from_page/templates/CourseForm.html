@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Form</title>
+</head>
+<body>
+    <form action="savecourse" method="post">
+        {%csrf_token%}
+        {{f.as_p}}
+        <input type="submit" >
+    </form>
+</body>
+</html>

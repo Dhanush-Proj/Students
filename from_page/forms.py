@@ -1,7 +1,7 @@
 from django.db import models
 from django.forms import ModelForm
 from .models import Student
-
+from .models import Course
 
 class StudentForm(ModelForm):
     class Meta:
@@ -13,4 +13,14 @@ class StudentForm(ModelForm):
             'age',
             'phone_no',
             'email_id',
+        ]
+
+class CourseForm(ModelForm):
+    class Meta:
+        model = Course
+        fields = [
+            'course_id',
+            'course_name',
+            'course_fees',
+            'course_duration',
         ]
