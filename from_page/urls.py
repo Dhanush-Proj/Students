@@ -10,8 +10,8 @@ urlpatterns = [
     # path('editstudent/<int:id>',views.EditStudent,name="editstudent"),
     # path('UpdateStudent/<int:id>',views.UpdateStudent,name='UpdateStudent'),
     # path('DeleteStudent/<int:id>',views.DeleteStudent,name="DeleteStudent"),
-
-    path('',views.course,name="course"),
+    path('',views.home,name="home"),
+    path('course',views.course,name="course"),
     path('courselist',views.CourseList,name="courselist"),
     path('savecourse',views.savecourse,name="savecourse"),
     path('editcourse/<int:id>',views.EditCourse,name="editcourse"),

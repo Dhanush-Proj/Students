@@ -52,7 +52,8 @@ from .models import Student,Course
 #         a.delete()
 #         return redirect('studentlist')
 
-
+def home(request):
+    return render(request,'homepage.html')
 def course(request):
     form = CourseForm
     return render(request,'CourseForm.html',{'f':form})
